@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Page</title>
+    <meta name="description" content="It is form page">
+</head>
+
+<body>
+
+    <h1>Form</h1>
+    <form action="index.html" method="get">
+
+        <fieldset>
+            Name : <input type="text" required maxlength="12" name="user_name" placeholder="John Smith">
+            <br>
+            Contact : <input required type="number" name="user_num" value="021">
+            <br>
+            <label for="password">Password :
+                <input type="password" required name="user_password" id="password">
+            </label>
+
+            <label for="email">Email</label>
+            <input type="email" required name="user_email" id="email">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Details</legend>
+            <label>
+                Contact <input type="tel" name="user_tel">
+            </label>
+            <label>
+                Search
+                <input type="search" name="query" id="">
+            </label>
+            <label for="">Address :
+                <textarea name="address" id="" cols="30" rows="10"></textarea>
+            </label>
+
+            <label for="">
+                Date Of Birth
+                <input type="date" name="date_of_birth" id="">
+            </label>
+
+            <label for="">
+                Courses :
+                <label>
+                    MERN
+                    <input type="checkbox" name="courses" id="" value="MERN">
+                </label>
+                <label>
+                    Graphics
+                    <input type="checkbox" name="courses" id="" value="graphics">
+                </label>
+                <label>
+                    Marketing
+                    <input type="checkbox" name="courses" id="" value="marketing">
+                </label>
+            </label>
+
+            <label for="">
+
+                Gender :
+                <label>
+                    Male :
+                    <input type="radio" name="gender" id="" value="male" checked>
+                </label>
+                <label>
+                    female :
+                    <input type="radio" name="gender" id="" value="female">
+                </label>
+
+                <label>
+                    Others
+                    <input type="radio" name="gender" id="" value="Others">
+                </label>
+
+            </label>
+        </fieldset>
+        <label for="">
+            Living City
+
+            <select id="" name="city" multiple>
+                <option value="karachi">Karachi</option>
+                <option value="islamabad" selected>Islamabad</option>
+                <option value="kpk">Peshawar</option>
+                <option value="lahore">Lahor</option>
+            </select>
+        </label>
+
+
+
+
+        <label for="">
+            <!-- It is image<img src="https://toppng.com/uploads/preview/click-me-11551060976clva7bqv6z.png" alt=""> -->
+
+            <input hidden type="file" name="" id="">
+        </label>
+        <!-- <input type="image" src="https://toppng.com/uploads/preview/click-me-11551060976clva7bqv6z.png" alt=""> -->
+
+
+        <input type="button" value="Click Me">
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
