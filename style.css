@@ -1,0 +1,81 @@
+.parent {
+    width: 100vw;
+    height: 10rem;
+    background-color: blue;
+}
+
+.parent>div {
+    width: 80%;
+    height: 80%;
+    background-color: bisque;
+}
+
+.child>div {
+    border: 1px solid white;
+    width: 80%;
+    height: 80%;
+    background-color: aqua;
+}
+
+
+.sibling-1 {
+    background-color: #ffc0cb;
+    width: 80vw;
+    height: 10rem;
+    margin: 5px;
+    color: #ff3131;
+    font-size: 5rem;
+}
+
+.sibling-2 {
+    background-color: orange;
+    width: 80vw;
+    height: 10rem;
+}
+
+/* .parent~div {
+    width: 80vw;
+    height: 10rem;
+    background-color: red;
+    margin: 5px
+} */
+
+.resposnive {
+    background-color: orange;
+    width: 50rem;
+    /* height: 10rem; */
+    margin: 10rem;
+    font-weight: bold;
+    font-size: 24px;
+    /* color:white; */
+    font-style: oblique ;
+    text-transform: capitalize;
+    /* line-height: 5em; */
+    letter-spacing: 2px;
+    word-spacing: 12px;
+    text-align: left;
+    text-indent:100px;
+    text-shadow: 10px 5px 10px white;
+}
+.resposnive::first-letter{
+    color: blue;
+}
+.resposnive::first-line{
+    color: blue;
+}
+.resposnive:hover{
+    background-color: #ff3131;
+}
+a{
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    .resposnive {
+        background-color: yellow;
+    }
+
+}
