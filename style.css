@@ -48,30 +48,135 @@
     font-weight: bold;
     font-size: 24px;
     /* color:white; */
-    font-style: oblique ;
+    font-style: oblique;
     text-transform: capitalize;
     /* line-height: 5em; */
     letter-spacing: 2px;
     word-spacing: 12px;
     text-align: left;
-    text-indent:100px;
+    text-indent: 100px;
     text-shadow: 10px 5px 10px white;
 }
-.resposnive::first-letter{
+
+.resposnive::first-letter {
     color: blue;
 }
-.resposnive::first-line{
+
+.resposnive::first-line {
     color: blue;
 }
-.resposnive:hover{
+
+.resposnive:hover {
     background-color: #ff3131;
 }
-a{
+
+a {
     color: black;
     font-weight: bold;
     font-size: 2em;
     text-decoration: none;
 }
+
+.click-me {
+    color: rgb(100%, 75.3%, 79.6%)
+}
+
+.click-me:active {
+    color: #ff3131;
+}
+
+input:focus {
+    outline: none;
+    width: 15em;
+}
+
+button[disabled] {
+    color: yellow
+}
+
+button[disabled]:active {
+    color: yellow
+}
+
+button[type="button"] {
+    border-radius: 10px;
+}
+
+button[class~="functionButton"] {
+    background: red;
+}
+
+button[class*="function"] {
+    background: blue;
+}
+
+#parent {
+    background-color: orange;
+    height: 10rem;
+    /* height: 10px; */
+    /* width: 50vw; */
+    /* overflow: scroll; */
+}
+
+#parent>.child {
+    background-color: pink;
+    width: 100%;
+    box-shadow: white;
+}
+
+#parent .grand-child {
+    /* margin: 5px; */
+    /* margin-top: ;
+    margin-left: ; */
+    margin: 50px 50px;
+    /* border-top: 5px dotted white; */
+    border: 50px solid;
+    border-radius: 20px;
+    color: white;
+    padding: 50px;
+    /* visibility: hidden; */
+    /* display: none; */
+    /* opacity: 0; */
+    border-image: url("https://interactive-examples.mdn.mozilla.net/media/examples/border-diamonds.png") 30 round;
+    border-image-repeat: repeat;
+}
+
+p {
+    text-align: center;
+}
+
+#parent {
+    box-shadow: 20px 30px 50px 1px green inset;
+}
+
+.eclipse {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin-left: 50%;
+    border-top-right-radius: 50%;
+}
+
+@media only screen and (max-width:768px) {
+    .resposnive {
+        background-color: yellow;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    #parent>.child {
+        width: 50%;
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    #parent>.child {
+        width: 50%;
+    }
+}
+
 
 @media only screen and (max-width:768px) {
     .resposnive {
