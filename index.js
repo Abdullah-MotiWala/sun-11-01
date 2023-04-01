@@ -206,7 +206,138 @@ for (let i = 1; i < 200; i = i + 1) {
 //   i = i + 1;
 // }
 
-// Print the table of 5 using for loop
-for (let i = 1; i <= 10; i = i + 1) {
-  console.log("5 X " + i + " = " + i * 5);
+// // Print the table of 5 using for loop
+// for (let i = 1; i <= 10; i = i + 1) {
+//   console.log("5 X " + i + " = " + i * 5);
+// }
+
+// for-loop
+// while-loop
+// do-while-loop
+// let i = 0
+// while (i < 5) {
+//   console.log(i)
+//   i = i + 1
+// }
+// do {
+//   console.log(i, "do")
+//   i = i + 1
+// } while (i < 0)
+
+
+// for (let i = 0; i < 5; i = i + 1) {
+//   if (i === 1) {
+//     continue;
+//   }
+//   if (i === 2) {
+//     break
+//   }
+//   console.log(i, "for")
+// }
+// let num = 10
+// // let num2 = ++num
+// num = num + 1
+// let num2 = num
+// console.log(num2, num)
+// let num = 10
+// let num2 = num++
+// console.log(num2)
+
+// let late = true
+// if (late === false) {
+//   console.log("very good")
+// } else if (late === true) {
+//   console.log("okay ")
+// } else {
+//   console.log("not okay")
+// }
+
+// Conditional Operators
+// >
+// <
+// <=
+// >=
+// ==
+// ===
+// !=
+// !==
+// let isYoung = true
+// let goodIncome = false
+// let ownHouse = true
+// goodIncome = true
+// if (isYoung && goodIncome && ownHouse) {
+//   console.log("Rishta Pakka")
+// } else {
+//   console.log("Istikhara me na aya")
+// }
+
+// let isStress = true
+// let gotAccident = false
+// let dantParGayi = true
+// if (isStress || gotAccident || dantParGayi) {
+//   console.log("Aja Chai Peete")
+// } else {
+//   console.log("Topi")
+// }
+
+
+// let num1 = 1
+// let num2 = 2
+
+// if (num1 === 1) {
+//   if (num2 === 2) {
+//     if (num1 === 1) {
+//       console.log("Nest True")
+//     }
+//     console.log("True")
+//   } else {
+//     console.log("False")
+//   }
+// }
+
+// let myArray = [1, "2", 3,]
+// // Remove
+// myArray.pop()
+// // Add in last
+// myArray.push(4)
+// // Add in start
+// myArray.unshift(false)
+// // Remove from start
+// myArray.shift()
+
+// console.log(myArray.length)
+// console.log(myArray)
+
+// let flag = true
+// let gamePoints = 1005
+// if (gamePoints <= 1000) {
+//   flag = false
+// }
+
+// if (flag) {
+//   alert("You are Pro")
+// } else if (!flag) {
+//   alert("You are noob")
+// }
+
+let myArray1 = [1, 2, 4]
+let myArray2 = ["abdullah", "Ali", "Arbaz"]
+let target = 1
+// console.log(myArray1[target])
+// for (let i = 0; i < myArray1.length; i++) {
+//   let current_value = myArray1[i]
+//   for (let j = 0; j < myArray2.length; j++) {
+//     console.log(current_value, myArray2[j])
+//   }
+// }
+
+for (let i = 0; i < 3; i++) {
+  console.log("i", i)
+  for (let j = 0; j < 3; j++) {
+    console.log("j", j)
+  }
 }
+0
+0
+1
+2
