@@ -1,3 +1,17 @@
+header {
+    display: flex;
+    background-color: #679289;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header span {
+    margin-right: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
 nav {
     background-color: #679289;
     display: flex;
@@ -5,6 +19,7 @@ nav {
     justify-content: center;
     padding: 12px;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 nav a {
@@ -99,26 +114,28 @@ nav a:hover {
 .top-to-bottom:active {
     transform: scale(1.1);
 }
-footer{
-    height:100px;
+
+footer {
+    height: 100px;
     background-color: grey;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
-footer .content{
+
+footer .content {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
 
 
-.copywright{
+.copywright {
     background-color: black;
-    color:whitesmoke;
-    width:100%;
+    color: whitesmoke;
+    width: 100%;
     text-align: center;
 }
 
