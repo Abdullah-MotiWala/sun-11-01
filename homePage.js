@@ -114,15 +114,121 @@ const myObj = {
 // myObj.fname = "junaid"
 // delete myObj.name
 // myObj.setAttendence()
-
+let loading = false
 const loginButton = document.querySelector("#login")
 const loginHandler = () => {
-    // user inputted values
+    try {
+        loading = true
+        // api hit
 
-    // user registered values
-    const userData = JSON.parse(localStorage.getItem('user'))
-    console.log(userData)
+        // api hit complete
+        // user inputted values
+
+        // user registered values
+        const userData = JSON.parse(localStorage.getItem('user'))
+        console.log(userData)
+    } catch (err) {
+        alert(err)
+    } finally {
+        loading = false
+    }
 }
 
 loginButton.addEventListener("click", loginHandler)
 
+// const abdullah = {
+//     name: "abdullah",
+//     fname: "junaid",
+//     percentage: (marks) => {
+//         if (marks > 60) {
+//             return "A"
+//         } return "B"
+//     }
+// }
+
+// function User(user_name, f_name, marks) {
+//     this.name = user_name
+//     this.fname = f_name
+//     this.marks = marks
+//     this.percentage = () => {
+//         if (this.marks > 60) {
+//             return "A"
+//         } return "B"
+//     }
+// }
+
+// const Ali = new User("Ali", "Sachwani", 200)
+// let AliMarks = Ali.percentage()
+// console.log(Ali, AliMarks)
+
+
+// function Building(familyMember, rooms) {
+//     this.familyMember = familyMember
+//     this.rooms = rooms
+//     this.getMaintance = function () {
+//         if (rooms === 2) {
+//             return 5000
+//         }
+//         return 7000
+//     }
+// }
+// Building.prototype.getBill = function () {
+//     billUnits = this.familyMember * this.rooms
+//     unitAmout = 5
+//     return billUnits * unitAmout
+// }
+
+// let roomNumbers = prompt("Enter Room No.")
+// let familyMembers = prompt("Enter Family Members")
+
+// let hassan = new Building(familyMembers, roomNumbers)
+// console.log(hassan, hassan.getBill())
+// let ahmed = new Building(5, 2)
+
+
+// let currentPath = window.location
+// currentPath.replace("index.html")
+// window.location.pathname = "google.com"
+// open("http://google.com")
+// console.log(currentPath)
+
+const showError = () => {
+    try {
+        throw new Error("Error Occured")
+        alert("function try")
+    } catch (err) {
+        alert(err)
+    } finally {
+        alert("function completed")
+    }
+}
+alert("Readyy")
+showError()
+
+const myProducts = [{ productId: 1, title: "XYZ", description: "XYz", image: "//link", isFeatured: true }]
+featureDiv
+ProductDiv
+for (let product of myProducts) {
+    let mainDiv = document.createElement('div')
+    //  heading created
+    let headingText = document.createTextNode(product.title)
+    let heading = document.createElement('h2')
+    heading.appendChild(headingText)
+    mainDiv.appendChild(heading)
+
+    // description
+    let descriptionText = document.createTextNode(product.description)
+    let description = document.createElement('p')
+    description.appendChild(descriptionText)
+    mainDiv.appendChild(description)
+
+    // button
+    let buttonText = document.createTextNode("See More")
+    let button = document.createElement('button')
+    button.appendChild(buttonText)
+    button.addEventListener('click', seeMore)
+    mainDiv.appendChild(button)
+
+    // add in feature and product div
+    productDiv.appendChild(mainDiv)
+}
