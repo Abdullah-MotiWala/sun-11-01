@@ -182,12 +182,56 @@ console.log("ecma")
 //     })
 // })
 
-const getResult = async () => {
-    const response = await fetch('https://fakestoreapi.com/products/1')
-    const data = await response.json()
-    return data
-}
+// const getResult = async () => {
+//     const response = await fetch('https://fakestoreapi.com/products/1')
+//     const data = await response.json()
+//     return data
+// }
 
-getResult().then((value) => {
-    console.log(value)
-})
+// getResult().then((value) => {
+//     console.log(value)
+// })
+
+
+// function MyContructor(name, rollNo) {
+//     this.name = name;
+//     this.rollNo = rollNo
+// }
+
+// class MySecondClass {
+//     constructor(qualification) {
+//         this.qualification = qualification + 1
+//     }
+// }
+
+// class MyClass extends MySecondClass {
+//     constructor(name, rollNo, qualification) {
+//         super(qualification)
+//         this.name = name;
+//         this.rollNo = rollNo
+//     }
+//     setRollNo(newRoll) {
+//         this.rollNo = newRoll
+//     }
+
+//     getName() {
+//         console.log(this.name)
+//     }
+// }
+
+// let result = new MyContructor('zavyar', 25)
+// let name = result.name
+// result.rollNo = 30
+// console.log(result, name)
+
+
+// let result = new MyClass('haseeb', 15, 10)
+// result.getName()
+// result.setRollNo(25)
+// console.log(result)
+
+
+// var doomsday = new Date("June 30, 2035");
+// console.log(doomsday.getTime())
+
+
