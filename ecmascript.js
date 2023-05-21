@@ -235,3 +235,12 @@ console.log("ecma")
 // console.log(doomsday.getTime())
 
 
+let string = 'my name is  ....'
+let slicedString = string.slice(0, 2)
+'The   World War II could not finish'
+5
+for (var i = 0; i < text.length; i++) {
+    if (text.slice(i, i + 12) === "World War II") {
+        text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+    }
+}
